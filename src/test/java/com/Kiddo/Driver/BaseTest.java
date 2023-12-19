@@ -22,8 +22,8 @@ public class BaseTest {
 	protected static RequestSpecification RequestAccessToken;
 	protected static ResponseSpecification responseSpec;
 	public static Response RefreshResponseToken;
-	public static String Stagingurl = "https://prodauth.goodparents.co/oauth2/token";
-	public static String Produrl = "https://authorizer.goodparents.co/oauth2/token";
+	public static String Stagingurl = "";
+	public static String Produrl = "";
 	
 	
 	public static String refreshToken;
@@ -58,7 +58,6 @@ public class BaseTest {
 //			requestSpec = given().param("grant_type", prop.GrantType()).param("client_id", prop.GetIOSclientid())
 //					.param("redirect_uri", prop.RedirectUri()).param("code", prop.Code());
 //			RefreshResponseToken = requestSpec.post(Produrl);
-//			baseURI = "https://prodapi.goodparents.co/api";
 //			int RefreshToken = RefreshResponseToken.getStatusCode();
 //			Assert.assertEquals(RefreshToken, TestData.Status_Code_200);
 //
@@ -68,7 +67,7 @@ public class BaseTest {
 //			requestSpec = given().param("grant_type", prop.GrantType()).param("client_id", prop.GetIOSclientid())
 //					.param("redirect_uri", prop.RedirectUri()).param("code", prop.Code());
 //			RefreshResponseToken = requestSpec.post(Produrl);
-//			baseURI = "https://prodapi.goodparents.co/api";
+//			
 //			int RefreshToken = RefreshResponseToken.getStatusCode();
 //			Assert.assertEquals(RefreshToken, TestData.Status_Code_200);
 //
